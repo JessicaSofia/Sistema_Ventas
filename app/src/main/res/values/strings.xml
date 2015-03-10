@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">My Application</string>
+    <string name="app_name">APP TIENDA</string>
+    <string name="titulo"> MI TIENDA</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="bienvenida">Autor: Diego Alvaro</string>
+    <string name="bienvenida">Autor: Grupo</string>
     <string name="compra">Realizar Compra</string>
     <string name="ingreso">Ingresar Producto</string>
     <string name="lbltipo">Tipo: </string>
     <string name="lblID">Código: </string>
     <string name="lblnombre">Nombre: </string>
     <string name="lblcosto">Costo:</string>
+
 
     <string-array name="opciones">
         <item>Selecciona...</item>
@@ -27,5 +29,9 @@
     <string name="btnsecundario">Producto Unitario</string>
     <string name="nombre">Seleccione</string>
     <string name="iniciar">Iniciar</string>
+
+    <string name="tpass">Password</string>
+    <string name="btnok">Ingresar</string>
+    <string name="tuser">User</string>
 
 </resources>

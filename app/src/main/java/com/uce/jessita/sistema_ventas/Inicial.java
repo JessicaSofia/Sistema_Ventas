@@ -1,9 +1,11 @@
 package com.uce.jessita.sistema_ventas;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class Inicial extends ActionBarActivity {
@@ -35,5 +37,9 @@ public class Inicial extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void irpresentacion(View ver){
+        Intent mi1=new Intent(this,Presentacion.class);
+        startActivity(mi1);
     }
 }

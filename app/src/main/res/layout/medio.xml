@@ -28,8 +28,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/btnsecundario"
-        android:layout_margin="10dp"
-        android:onClick="opcion2" />
+        android:onClick="opcion2"
+        android:layout_below="@+id/button1"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignStart="@+id/button1" />
 
 
 </RelativeLayout>

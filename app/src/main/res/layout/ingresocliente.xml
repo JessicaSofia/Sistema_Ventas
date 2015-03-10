@@ -60,7 +60,7 @@
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
-        android:onClick="loginadmin"
+        android:onClick="logeocliente"
         android:text="@string/ctnok"
         android:background="@color/primary_dark_material_light"
         android:layout_gravity="center_horizontal"/>
@@ -72,6 +72,6 @@
         android:text="Crear Nueva Cuenta"
         android:id="@+id/button5"
         android:layout_gravity="center_horizontal"
-        android:onClick=""/>
+        android:onClick="cuenta"/>
 
 </LinearLayout>

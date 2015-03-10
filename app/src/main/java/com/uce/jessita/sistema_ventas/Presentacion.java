@@ -21,7 +21,7 @@ public class Presentacion  extends Activity{
         startActivity(admin);
     }
     public void logeocliente(View ver){
-        Intent cliente = new Intent(this,Administrador.class);
+        Intent cliente = new Intent(this,logeoCliente.class);
         startActivity(cliente);
     }
 }

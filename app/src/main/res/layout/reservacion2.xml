@@ -29,7 +29,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="irmenu"
-        android:text="Agregar más Productos" />
+        android:text="Agregar más Productos"
+        android:layout_below="@+id/sublista"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
 
     <Button
         android:id="@+id/button2"
@@ -37,6 +40,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Terminar Compra"
-        android:onClick="terminarcompra" />
+        android:onClick="terminarcompra"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
 
 </RelativeLayout>

@@ -94,7 +94,7 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="limpiar"
+        android:onClick="irmenu"
         android:text="@string/btnSalir"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/button1"

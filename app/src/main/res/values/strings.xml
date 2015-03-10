@@ -34,4 +34,16 @@
     <string name="btnok">Ingresar</string>
     <string name="tuser">User</string>
 
+    <string name="cpass">Password</string>
+    <string name="ctnok">Ingresar</string>
+    <string name="cuser">User</string>
+
+    <string name="idusuario">Cedula</string>
+    <string name="nombrecliente">Usuario</string>
+    <string name="correo">Email</string>
+    <string name="contraseña"> Contraseña</string>
+    <string name="crear">Agregar Usuario </string>
+
+
+
 </resources>

@@ -21,7 +21,11 @@
         android:layout_width="fill_parent"
         android:layout_height="272dp"
         android:layout_weight="0.48"
-        android:drawSelectorOnTop="false" >
+        android:drawSelectorOnTop="false"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="61dp">
     </ListView>
 
     <Button
@@ -30,6 +34,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="irmenu"
-        android:text="@string/btnSalir" />
+        android:text="@string/btnSalir"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp" />
 
 </RelativeLayout>

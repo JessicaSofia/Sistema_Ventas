@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Lista de Compras"
+        android:textColor="#EF1515"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/comprado"
+        android:layout_width="fill_parent"
+        android:layout_height="213dp"
+        android:layout_weight="0.34"
+        android:drawSelectorOnTop="false" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/totalpago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pago"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Realizar Compra"
+        android:onClick="terminarcompra" />
+
+
+
+</RelativeLayout>

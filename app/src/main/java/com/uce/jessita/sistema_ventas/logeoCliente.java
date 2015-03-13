@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class logeoCliente  extends Activity{
 
-    EditText ci,name,mail,ps;
+    EditText name,ps;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -38,8 +38,9 @@ public class logeoCliente  extends Activity{
         Cursor fila = bd.rawQuery(selectQuery, null );
         Cursor fil=bd.rawQuery(selectQuery1,null);
         if (fila.moveToFirst() && fil.moveToFirst()){
-            Intent r = new Intent(this,Reservaciones1.class);
-            startActivity(r);
+            Intent z = new Intent(this,Reservaciones1.class);
+            z.putExtra("id",fil.getString(1));
+            startActivity(z);
         } else{
             Toast.makeText(this, "No existe la CEDULA", Toast.LENGTH_LONG).show();}
         bd.close();

@@ -29,13 +29,16 @@ import android.widget.AdapterView.OnItemClickListener;
 public class Reservaciones2 extends Activity{
     public TextView paratitulo;
     public ListView misublista;
-    public String grupo, micodigo;
+    public String grupo, micodigo,name;
+    Bundle extra;
 
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reservacion2);
         misublista=(ListView)findViewById(R.id.sublista);
+        extra=getIntent().getExtras();
+        name=extra.getString("id");
 
         //para coger el Grupo de Compras1
         paratitulo=(TextView)findViewById(R.id.ProductName);
@@ -117,7 +120,9 @@ public class Reservaciones2 extends Activity{
     }
 
     public void terminarcompra(View ver){
+        String c=name.toString();
         Intent terminar = new Intent(this,Terminar.class);
+        terminar.putExtra("id",c);
         startActivity(terminar);
     }
 

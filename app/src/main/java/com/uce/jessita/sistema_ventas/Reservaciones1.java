@@ -32,12 +32,16 @@ public class Reservaciones1 extends Activity {
 
     public ListView milista;
     public TextView probando;
+    Bundle extras;
+    String name;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.reservacion1);
         milista = (ListView) findViewById(R.id.lista);
         probando = (TextView) findViewById(R.id.textView1);
+        extras = getIntent().getExtras();
+        name=extras.getString("id");
 
         //rellenando Lista
         Set<String> set = getAllData();
@@ -63,8 +67,11 @@ public class Reservaciones1 extends Activity {
                                     long arg3) {
                 String uno = milista.getItemAtPosition(lugar).toString();
                 //evento ir pantalla Compras2
+                String l=name.toString();
                 Intent ir2 = new Intent(Reservaciones1.this, Reservaciones2.class);//InstanciaDeParamaetro
                 ir2.putExtra("grupo", uno);//PasandoElDatoNOMBRE
+                ir2.putExtra("id",l);
+
                 startActivity(ir2);
             }
         });

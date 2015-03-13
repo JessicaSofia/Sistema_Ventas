@@ -21,7 +21,7 @@ public class BaseDatos extends SQLiteOpenHelper{
         db.execSQL("create table productoPadre(idprod integer primary key, nombre text)");
         db.execSQL("create table productoHijo(idsub integer primary key, nombre text, precio text, codpadre integer)");
         db.execSQL("create table compras(producto text)");
-        db.execSQL("create table cliente(ciclt intger primary key, nombre text, correo text, contraseña text)");
+        db.execSQL("create table cliente(ciclt integer primary key, nombre text, correo text, contraseña text)");
      }
 
     @Override
@@ -34,7 +34,7 @@ public class BaseDatos extends SQLiteOpenHelper{
         db.execSQL("create table productoPadre(idprod integer primary key, nombre text)");
         db.execSQL("create table productoHijo(idsub integer primary key, nombre text, precio text, codpadre integer)");
         db.execSQL("create table compras(producto text)");
-        db.execSQL("create table cliente(ciclt intger primary key, nombre text, correo text, contraseña text)");
+        db.execSQL("create table cliente(ciclt integer primary key, nombre text, correo text, contraseña text)");
     }
 
     //obtener datos para el spinner

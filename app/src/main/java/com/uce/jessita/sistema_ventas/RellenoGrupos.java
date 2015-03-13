@@ -22,8 +22,8 @@ public class RellenoGrupos extends Activity{
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pantallagrupo);
-        idgrupo=(EditText)findViewById(R.id.editText1);
-        idnombre=(EditText)findViewById(R.id.editText2);
+        idgrupo=(EditText)findViewById(R.id.b1);
+        idnombre=(EditText)findViewById(R.id.b2);
     }
 
     //ingreso de datos al grupo, tabla productosPadre

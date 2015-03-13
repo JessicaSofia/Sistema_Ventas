@@ -35,9 +35,9 @@ public class RellenoDatos extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pantallaingreso);
         mispinner=(Spinner)findViewById(R.id.spinner1);
-        idprod=(EditText)findViewById(R.id.editText1);
-        nombreprod=(EditText)findViewById(R.id.editText2);
-        costoprod=(EditText)findViewById(R.id.editText3);
+        idprod=(EditText)findViewById(R.id.b1);
+        nombreprod=(EditText)findViewById(R.id.b2);
+        costoprod=(EditText)findViewById(R.id.b3);
 
 
         //implantacion de datos al spinner
@@ -79,6 +79,7 @@ public class RellenoDatos extends Activity {
     }
 
     //guardar datos en la base de subproductos
+
     public void productoagregar(View v){
         BaseDatos dbobject= new BaseDatos(this,"supermercado2",null,1);
         SQLiteDatabase bd = dbobject.getWritableDatabase();

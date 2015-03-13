@@ -7,63 +7,45 @@
 
 
     <TextView
-        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="53dp"
-        android:text="@string/cuser"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:background="@color/accent_material_light"/>
+        android:text="USUARIO"
+        android:id="@+id/textView11"
+        android:layout_gravity="center_horizontal" />
 
     <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
+        android:inputType="textPersonName"
         android:ems="10"
-        android:inputType="text"
-        android:background="@color/accent_material_light">
-
-        <requestFocus />
-    </EditText>
+        android:id="@+id/l1"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="26dp"
-        android:text="@string/cpass"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:background="@color/accent_material_light"/>
+        android:text="CONTRASEÑA"
+        android:id="@+id/textView13"
+        android:layout_gravity="center_horizontal" />
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="10"
         android:inputType="textPassword"
-        android:background="@color/accent_material_light"/>
+        android:ems="10"
+        android:id="@+id/l2"
+        android:layout_gravity="center_horizontal" />
 
     <Button
-        android:id="@+id/button4"
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:onClick="logeocliente"
-        android:text="@string/ctnok"
-        android:background="@color/primary_dark_material_light"
-        android:layout_gravity="center_horizontal"/>
+        android:text="INGRESAR"
+        android:id="@+id/button4"
+        android:layout_gravity="center_horizontal"
+        android:onClick="logeo"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"

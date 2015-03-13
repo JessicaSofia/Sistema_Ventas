@@ -12,7 +12,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/titulo"
         android:id="@+id/textView"
-        android:layout_marginTop="52dp"
         android:background="@color/accent_material_light"
         android:layout_below="@+id/textView6"
         android:layout_centerHorizontal="true" />
@@ -36,5 +35,33 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="irpresentacion"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="INTEGRANTES"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alvaro Diego"
+        android:id="@+id/textView15"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_below="@+id/textView14"
+        android:layout_toLeftOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quimbiulco Richar"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />
 
 </RelativeLayout>

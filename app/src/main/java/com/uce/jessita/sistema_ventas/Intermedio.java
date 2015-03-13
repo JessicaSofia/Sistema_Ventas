@@ -26,5 +26,8 @@ public class Intermedio extends Activity{
         Intent mi1=new Intent(this,RellenoDatos.class);
         startActivity(mi1);
     }
-
+    public void adcl(View ver){
+        Intent a=new Intent(this,AdCliente.class);
+        startActivity(a);
+    }
 }

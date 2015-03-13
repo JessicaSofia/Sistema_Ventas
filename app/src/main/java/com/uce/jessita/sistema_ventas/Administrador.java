@@ -24,8 +24,8 @@ public class Administrador extends Activity {
 
 
     public void loginadmin(View view){
-        EditText username = (EditText)findViewById(R.id.editText1);
-        EditText password = (EditText)findViewById(R.id.editText2);
+        EditText username = (EditText)findViewById(R.id.b1);
+        EditText password = (EditText)findViewById(R.id.b2);
 
 
         if(username.getText().toString().equals("admin") &&

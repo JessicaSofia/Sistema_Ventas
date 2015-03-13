@@ -53,6 +53,7 @@ public class Terminar extends Activity{
         int uno=suma();
         numeroproductos.setText("Número de artículos: "+uno);
         //fin obtener valor total de la compra
+
     }
 
     //obtener productos de la lista

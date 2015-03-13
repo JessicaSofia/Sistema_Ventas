@@ -69,7 +69,7 @@ public class AdCliente extends Activity{
             mail.setText(fila.getString(2));
             ps.setText(fila.getString(3));
         } else{
-            Toast.makeText(this, "No existe la CEDULA", Toast.LENGTH_LONG).show();}
+            Toast.makeText(this, "No existe la Cliente", Toast.LENGTH_LONG).show();}
         bd.close();
     }
     public void fmodificar (View v){

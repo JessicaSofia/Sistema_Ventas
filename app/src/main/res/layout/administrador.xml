@@ -2,17 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/idministrador">
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="74dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
         android:layout_marginTop="53dp"
         android:text="@string/tuser"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/wallet_link_text_light"/>
 
     <EditText
         android:id="@+id/b1"
@@ -20,7 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:ems="10"
         android:inputType="text" >
@@ -34,16 +34,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/b1"
         android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
         android:layout_marginTop="26dp"
         android:text="@string/tpass"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/wallet_link_text_light"/>
 
     <EditText
         android:id="@+id/b2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:ems="10"
         android:inputType="textPassword" />
 
@@ -53,7 +52,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/b2"
         android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
         android:layout_marginTop="26dp"
         android:onClick="loginadmin"
         android:text="@string/btnok" />

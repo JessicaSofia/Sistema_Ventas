@@ -103,6 +103,7 @@ public class Terminar extends Activity{
         SQLiteDatabase bd = dbobject.getWritableDatabase();
         bd.execSQL("delete from compras");
         Toast.makeText(this,"Compra realizada correctamente", Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Su factura sera enviada al correo", Toast.LENGTH_LONG).show();
         Intent almenu=new Intent(Terminar.this,Inicial.class);
         startActivity(almenu);
 

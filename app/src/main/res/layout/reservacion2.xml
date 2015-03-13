@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Terminar Compra"
-        android:onClick="terminarcompra"
+        android:onClick="terminarcompr"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="58dp" />

@@ -23,12 +23,7 @@ public class factura extends Activity {
 
         extra=getIntent().getExtras();
         name=extra.getString("id");
-        c=(TextView) findViewById(R.id.t1);
-        n=(TextView) findViewById(R.id.t2);
-        m=(TextView) findViewById(R.id.t3);
-        p=(TextView) findViewById(R.id.t4);
-    }
-    public void enviar(View ver){
+
         BaseDatos dbobject = new BaseDatos(this,"supermercado2",null,1);
         SQLiteDatabase bd = dbobject.getWritableDatabase();
         String c=name.toString();
@@ -42,14 +37,17 @@ public class factura extends Activity {
             ci.setText(fil.getString(0));
             nom.setText(fil.getString(1));
             co.setText(fil.getString(2));
-            pag.setText("total a pagar $ 24.00");
-            Toast.makeText(this, "Compra realizada correctamente", Toast.LENGTH_LONG).show();
-            Toast.makeText(this,"Su factura sera enviada al correo", Toast.LENGTH_LONG).show();
+            pag.setText("pagar $ ");
         } else{
-        bd.close();
+            bd.close();
+    }}
+    public void enviar(View ver){
+        Toast.makeText(this, "Compra realizada correctamente", Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Su factura sera enviada al correo", Toast.LENGTH_LONG).show();
+
     }
 
 
     }
 
-}
+

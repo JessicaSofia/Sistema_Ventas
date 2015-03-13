@@ -119,7 +119,7 @@ public class Reservaciones2 extends Activity{
         startActivity(salir);
     }
 
-    public void terminarcompra(View ver){
+    public void terminarcompr(View ver){
         String c=name.toString();
         Intent terminar = new Intent(this,Terminar.class);
         terminar.putExtra("id",c);

@@ -39,7 +39,7 @@ public class logeoCliente  extends Activity{
         Cursor fil=bd.rawQuery(selectQuery1,null);
         if (fila.moveToFirst() && fil.moveToFirst()){
             Intent z = new Intent(this,Reservaciones1.class);
-            z.putExtra("id",fil.getString(1));
+            z.putExtra("id",fila.getString(1));
             startActivity(z);
         } else{
             Toast.makeText(this, "No existe la CEDULA", Toast.LENGTH_LONG).show();}

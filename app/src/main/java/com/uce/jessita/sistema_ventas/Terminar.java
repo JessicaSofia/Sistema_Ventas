@@ -27,12 +27,16 @@ import android.widget.Toast;
 public class Terminar extends Activity{
     public ListView listaproductos;
     public TextView numeroproductos;
+    String name;
+    Bundle extra;
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.terminar);
         listaproductos=(ListView)findViewById(R.id.comprado);
         numeroproductos=(TextView)findViewById(R.id.totalpago);
+        extra=getIntent().getExtras();
+        name=extra.getString("id");
 
         //rellenando la lista de compras
         Set<String>set=getAllData();
@@ -104,9 +108,10 @@ public class Terminar extends Activity{
         bd.execSQL("delete from compras");
         Toast.makeText(this,"Compra realizada correctamente", Toast.LENGTH_LONG).show();
         Toast.makeText(this,"Su factura sera enviada al correo", Toast.LENGTH_LONG).show();
-        Intent a=new Intent(Terminar.this,factura.class);
+        String c=name.toString();
+        Intent a=new Intent(this,factura.class);
+        a.putExtra("id",c);
         startActivity(a);
-
     }
 
 }

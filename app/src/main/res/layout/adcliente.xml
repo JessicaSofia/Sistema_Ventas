@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/b3"
-        android:text="@string/idusuario" />
+        android:text="CONTRASEÑA" />
 
     <EditText
         android:id="@+id/b4"
